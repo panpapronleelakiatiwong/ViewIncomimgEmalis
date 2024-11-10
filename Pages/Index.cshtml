@@ -1,0 +1,54 @@
+﻿@page
+@model InventorySystem.Pages.Rangsit.IndexModel
+@{
+    ViewData["Title"] = "Inbox";
+}
+
+<div class="container my-4">
+    <h2 class="mb-3">Inbox</h2>
+
+    <div class="email-list">
+        @if (Model.Emails.Count == 0)
+        {
+            <p>No emails found.</p>
+        }
+        else
+        {
+            <div class="list-group">
+                @foreach (var email in Model.Emails)
+                {
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@email.From</h5>
+                            <small class="text-muted">@email.Date</small>
+                        </div>
+                        <p class="mb-1 font-weight-bold">@email.Subject</p>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 800px;
+    }
+
+    .email-list .list-group-item {
+        border: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+        .email-list .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+
+    .email-list h5 {
+        font-weight: 500;
+    }
+
+    .email-list p {
+        margin: 0;
+    }
+</style>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ViewIncomimgEmalis-4646a6b1-79cd-412b-971a-ce197b784d8e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.32" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.32" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.32" />
+    <PackageReference Include="Microsoft.Graph" Version="5.61.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.66.1" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="3.3.1" />
+  </ItemGroup>
+
+</Project>
