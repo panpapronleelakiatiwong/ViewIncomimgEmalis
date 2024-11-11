@@ -15,7 +15,7 @@ namespace InventorySystem.Pages.Rangsit
         {
             try
             {
-                string connectionString = "ใส่แอดเดรสdatabase";
+                string connectionString = "Server=tcp:busystem.database.windows.net,1433;Initial Catalog=busystem;Persist Security Info=False;User ID=cs436;Password=cs436P@55;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
